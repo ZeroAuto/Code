@@ -6,7 +6,7 @@ def store_phone_numbers(*array)
 
 	array.each do |i|
 		num = i.gsub(/\D/, "")
-		if num[0] = "1"
+		if num[0] == "1" && num.length == 11
 			num.slice(0)
 		end
 		unless num.length != 10
