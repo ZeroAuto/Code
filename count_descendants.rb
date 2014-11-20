@@ -40,6 +40,6 @@ class Root
 
 	def count_descendants
 		count(@root)
-		puts @count
+		return @count
 	end
 end
