@@ -19,7 +19,7 @@ end
 class Root
 	def initialize(node)
 		@root = node
-		@count = 1
+		@count = 0
 	end
 
 	def count(node)
