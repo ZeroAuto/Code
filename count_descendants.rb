@@ -23,7 +23,10 @@ class Root
 	end
 
 	def count(node)
-		if node.firstChild != nil && node.firstSibling != nil
+		if count == 0 && nodefirstChild != nil
+			count += 1
+			count_descendants(node.firstChild)
+		elsif node.firstChild != nil && node.firstSibling != nil
 			@count += 2
 			count(node.firstChild)
 			count(node.firstSibling)
