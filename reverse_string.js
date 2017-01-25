@@ -1,13 +1,9 @@
-function rev(value) {
-	if (value instanceof Array) {
-		var s = value.join("");
-	} else {
-		var s = value
-	}
-	r = "";
-	for (var i=s.length-1; i>=0; i--) {
-		var c = s.charAt(i)
-		r += c
-	}
-	console.log(r)
+var reverse_string = function(str) {
+	rstr = "";
+  
+	for (var i = str.length -1; i >= 0; i--) {
+  		rstr += str.charAt(i);
+  	}
+  
+  	return rstr;
 }
