@@ -12,9 +12,3 @@ def convert(base, value)
 	end
 	puts sum
 end
-
-convert(2, 101)
-convert(3, 111)
-convert(6, 21)
-convert(11, 12)
-
